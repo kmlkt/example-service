@@ -16,7 +16,7 @@ func main() {
 	}
 	log.Printf("Listening on port %s", port)
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello my friend. You are at %q, but its better to go out here", html.EscapeString(r.URL.Path))
+		fmt.Fprintf(w, "Hello my friend. You are at %q, but its better to go out of here!!!!!!!", html.EscapeString(r.URL.Path))
 	})
 
 	log.Fatal(http.ListenAndServe(":"+port, nil))
