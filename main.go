@@ -16,7 +16,7 @@ func main() {
 	}
 	log.Printf("Listening on port %s", port)
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Goodbye motherf****r %q", html.EscapeString(r.URL.Path))
+		fmt.Fprintf(w, "Heil mein f****r %q", html.EscapeString(r.URL.Path))
 	})
 
 	log.Fatal(http.ListenAndServe(":"+port, nil))
